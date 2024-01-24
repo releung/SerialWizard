@@ -173,7 +173,9 @@ void MainWindow::initUi() {
                                                  << "57600"
                                                  << "115200"
                                                  << "256000"
+                                                << "961200"
     );
+    serialPortBaudRateComboBox->setEditable(true);
     serialPortBaudRateLabel->setBuddy(serialPortBaudRateComboBox);
 
     auto serialPortDataBitsLabel = new QLabel(tr("数据位"), this);
@@ -228,7 +230,9 @@ void MainWindow::initUi() {
                                                        << "57600"
                                                        << "115200"
                                                        << "256000"
+                                                       << "961200"
     );
+    secondSerialPortBaudRateComboBox->setEditable(true);
     secondSerialPortBaudRateLabel->setBuddy(secondSerialPortBaudRateComboBox);
 
     auto secondSerialPortDataBitsLabel = new QLabel(tr("数据位"), this);
