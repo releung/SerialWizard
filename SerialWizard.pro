@@ -15,10 +15,11 @@ CONFIG += c++11
 TARGET = SerialWizard
 TEMPLATE = app
 
+CONFIG += ordered
 
 SOURCES += main.cpp\
     DataProcessDialog.cpp \
-    FrameInfoDialog.cpp \
+#    FrameInfoDialog.cpp \
     data/SerialBridgeReadWriter.cpp \
         mainwindow.cpp \
     global.cpp \
@@ -35,7 +36,7 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h \
     DataProcessDialog.h \
-    FrameInfoDialog.h \
+#    FrameInfoDialog.h \
     data/SerialBridgeReadWriter.h \
     global.h \
     CalculateCheckSumDialog.h \
